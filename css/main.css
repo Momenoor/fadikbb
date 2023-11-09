@@ -1,0 +1,200 @@
+.container {
+    position: relative;
+    border-radius: 9px;
+    margin: 200px auto;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0 0 10px 1px rgb(218, 218, 218);
+}
+.image {
+    width: 100%;
+    background-color: rgb(0, 153, 255);
+    height: 120px;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 40px;
+    border-radius: 50%;
+    width: 100px;
+    outline: 3px solid rgb(0, 153, 255);
+    border: 2px solid rgb(255, 255, 255);
+}
+.about-me {
+    text-align: center;
+}
+
+.about-me h2 {
+    margin-top: 40px;
+}
+
+.icon,
+.links,
+.interaction i,
+.interaction {
+    display: flex;
+    justify-content: center;
+}
+
+.icon a i {
+    margin: 2px 8px 20px;
+}
+div .links {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.container .content .links a {
+    color: white;
+    width: 25%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 153, 255);
+    border-radius: 30px;
+    margin: 0 6px 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding-left:10px ;
+    padding-right: 10px;
+}
+.interaction {
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.interaction div {
+    margin-left: 15px;
+    display: flex;
+}
+
+.interaction i div {
+    font-size: 8px;
+}
+.comment,
+.share {
+    display: flex;
+    margin-right: 5px;
+    align-items: center;
+    font-size: 10px;
+    border-right: 1px solid rgb(211, 211, 211);
+    cursor: pointer;
+}
+.css-1ukx6ls {
+    font-size: 13px;
+    color: inherit;
+    font-family: inherit;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+div div div {
+width: 90%;
+}
+
+.comment:hover .fa-comment {
+    color: rgb(156, 156, 156);
+}
+
+.share:hover .fa-share {
+    color: rgb(0, 225, 255);
+}
+
+@media (max-width:480px) {
+    .container {
+        border-radius: 9px;
+        margin: 30% auto;
+        width: 250px;
+        height: auto;
+        overflow: hidden;
+        box-shadow: 0 0 10px 1px rgb(218, 218, 218);
+    }
+
+    .comment,
+    .like,
+    .share {
+        display: flex;
+        margin-right: 0px;
+        align-items: center;
+        font-size: 10px;
+        border-right: 1px solid rgb(211, 211, 211);
+        cursor: pointer;
+    }
+
+    div div div {
+        margin-right: 5px;
+    }
+
+    div .links {
+        font-size: 10px;
+        font-family: sans-serif;
+    }
+}
+input{display: none;
+    position: absolute;
+    z-index: 2;
+    width: 250px;
+    left: 2px;
+    height: 0;
+}
+
+.comment:hover input{
+    display: block;
+    border: none;
+    border-radius: 9px;
+    height: 20px;
+    outline: none;
+}
+.tiktok{
+    width: 30px;
+    height: 30px;
+background-color: rgb(255, 255, 255);
+    overflow: hidden;
+margin: 0;
+    position: relative;
+
+}
+.tiktok1{
+    font-size: 18px;
+    z-index: 1;
+    left: 6%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 26%;
+    color: rgba(0, 255, 255, 0.575);
+    position: absolute;
+
+}
+.tiktok2{
+    font-size: 18px;
+    z-index: 1;
+    left: 14%;
+    transform: translateX(-50%)translateY(-50%);
+    top: 34%;
+    color: rgb(255, 0, 0);
+    position: absolute;
+}
+.css-mpw198 {
+    opacity: 0;
+    width: 141%;
+    height: 63%;
+    border-radius: 3em;
+    border: 1px solid rgb(224, 149, 237);
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: -27%;
+    transform: translate(-50%, -50%);}
+.tiktok3{
+    font-size: 18px;
+    z-index: 1;
+    left: 10%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 30%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+}
