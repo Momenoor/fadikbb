@@ -69,7 +69,10 @@ div .links {
 }
 
 .interaction div {
-    margin-left: 15px;
+    height: 25px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 18px;
     display: flex;
 }
 
@@ -85,7 +88,7 @@ div .links {
     border-right: 1px solid rgb(211, 211, 211);
     cursor: pointer;
 }
-.css-1ukx6ls {
+.css-1ukx6ls { width: 100%;
     font-size: 13px;
     color: inherit;
     font-family: inherit;
@@ -149,6 +152,73 @@ input{display: none;
     border-radius: 9px;
     height: 20px;
     outline: none;
+}
+.css-f8izc {
+    box-shadow: 0px 0px 0px;
+    transform: translate3d(0px, 0px, 0px);
+    cursor: pointer;
+    background-color: rgb(0 153 255 / 24%);
+    appearance: none;
+    position: relative;
+    font-size: inherit;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    line-height: 1em;
+    border: none !important;
+    outline: none !important;
+    border-radius: 100% !important;
+    width: 5em !important;
+    height: 2.5em !important;
+    padding: 0px !important;
+}
+
+.css-v5rf3y {
+    box-shadow: 0px 0px 0px;
+    transform: translate3d(0px, 0px, 0px);
+    cursor: pointer;
+    background-color: transparent;
+    appearance: none;
+    position: relative;
+    font-size: inherit;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    line-height: 1em;
+    border: none !important;
+    outline: none !important;
+    border-radius: 100% !important;
+    width: 5em !important;
+    height: 2.5em !important;
+    padding: 0px !important;
+}
+.css-fih1bd {
+    width: fit-content;
+    margin-left: 0.5em;
+    color: rgb(41, 41, 41);
+    font-family: inherit;
+}
+
+.css-1ukx6ls {
+    width: 55px;
+    font-size: 13px;
+    color: inherit;
+    font-family: inherit;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.likeP{
+    height: 70px;
+}
+.css-1ukx6ls {
+    padding-right: 10px;
+    border-right: 1px solid gray;
+    color: inherit;
+    font-family: inherit;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.css-f8izc:hover {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    opacity: 0.75;
 }
 .tiktok{
     width: 30px;
