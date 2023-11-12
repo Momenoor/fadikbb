@@ -7,12 +7,14 @@
     overflow: hidden;
     box-shadow: 0 0 10px 1px rgb(218, 218, 218);
 }
+
 .image {
     width: 100%;
     background-color: rgb(0, 153, 255);
     height: 120px;
     position: relative;
 }
+
 .logo {
     position: absolute;
     left: 50%;
@@ -23,6 +25,7 @@
     outline: 3px solid rgb(0, 153, 255);
     border: 2px solid rgb(255, 255, 255);
 }
+
 .about-me {
     text-align: center;
 }
@@ -42,6 +45,7 @@
 .icon a i {
     margin: 2px 8px 20px;
 }
+
 div .links {
     font-size: 15px;
     font-family: sans-serif;
@@ -59,27 +63,26 @@ div .links {
     margin: 0 6px 0;
     font-family: sans-serif;
     text-decoration: none;
-    padding-left:10px ;
+    padding-left: 10px;
     padding-right: 10px;
 }
+
 .interaction {
-    height: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .interaction div {
-    height: 25px;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 18px;
-    display: flex;
+    margin-left: 15px;
 }
 
 .interaction i div {
+    margin-left: 7px;
     font-size: 8px;
 }
+
 .comment,
+.like,
 .share {
     display: flex;
     margin-right: 5px;
@@ -88,16 +91,9 @@ div .links {
     border-right: 1px solid rgb(211, 211, 211);
     cursor: pointer;
 }
-.css-1ukx6ls { width: 100%;
-    font-size: 13px;
-    color: inherit;
-    font-family: inherit;
-    display: inline-flex;
-    -webkit-box-align: center;
-    align-items: center;
-}
+
 div div div {
-width: 90%;
+    margin-right: 10px;
 }
 
 .comment:hover .fa-comment {
@@ -138,97 +134,78 @@ width: 90%;
         font-family: sans-serif;
     }
 }
-input{display: none;
+
+form {
+    display: flex;
+}
+form,.fa-close{
+    visibility: hidden;
+}
+.fa-close{
+    z-index: 3;
+    position: absolute;
+    top: 5px;
+    font-size: 15px;
+    right: 5px;
+}
+.fa-close:hover{
+    color: red;
+}
+.comment .inputmsm {
+    display: block;    
+    position: absolute;    
+    left: 2px;
+    border: none;
+    border-radius: 9px;    
+    outline: none;
+    height: 20px;
+    width: 80%;    
+    z-index: 2;
+}
+
+
+.comment .submit {
     position: absolute;
     z-index: 2;
-    width: 250px;
-    left: 2px;
-    height: 0;
-}
-
-.comment:hover input{
-    display: block;
+    width: 40px;
+    right: 0px;
+    cursor: pointer;
+    display: flex;
     border: none;
     border-radius: 9px;
-    height: 20px;
+    color: rgb(14, 14, 14);
+    background-color: white;
     outline: none;
-}
-.css-f8izc {
-    box-shadow: 0px 0px 0px;
-    transform: translate3d(0px, 0px, 0px);
-    cursor: pointer;
-    background-color: rgb(0 153 255 / 24%);
-    appearance: none;
-    position: relative;
-    font-size: inherit;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    line-height: 1em;
-    border: none !important;
-    outline: none !important;
-    border-radius: 100% !important;
-    width: 5em !important;
-    height: 2.5em !important;
-    padding: 0px !important;
+    height: 22px;
+    justify-content: center;
 }
 
-.css-v5rf3y {
-    box-shadow: 0px 0px 0px;
-    transform: translate3d(0px, 0px, 0px);
-    cursor: pointer;
-    background-color: transparent;
-    appearance: none;
-    position: relative;
-    font-size: inherit;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    line-height: 1em;
-    border: none !important;
-    outline: none !important;
-    border-radius: 100% !important;
-    width: 5em !important;
-    height: 2.5em !important;
-    padding: 0px !important;
-}
-.css-fih1bd {
-    width: fit-content;
-    margin-left: 0.5em;
-    color: rgb(41, 41, 41);
-    font-family: inherit;
+form::before {
+    display: block;
+    transform: scale(0);
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 356.41px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(233, 238, 238);
+    transform: scale(1);
 }
 
-.css-1ukx6ls {
-    width: 55px;
-    font-size: 13px;
-    color: inherit;
-    font-family: inherit;
-    display: inline-flex;
-    -webkit-box-align: center;
-    align-items: center;
-}
-.likeP{
-    height: 70px;
-}
-.css-1ukx6ls {
-    padding-right: 10px;
-    color: inherit;
-    font-family: inherit;
-    display: inline-flex;
-    -webkit-box-align: center;
-    align-items: center;
-}
-.css-f8izc:hover {
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    opacity: 0.75;
-}
-.tiktok{
+.tiktok {
     width: 30px;
     height: 30px;
-background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
-margin: 0;
+    margin: 0;
     position: relative;
 
 }
-.tiktok1{
+
+.tiktok1 {
     font-size: 18px;
     z-index: 1;
     left: 6%;
@@ -238,7 +215,8 @@ margin: 0;
     position: absolute;
 
 }
-.tiktok2{
+
+.tiktok2 {
     font-size: 18px;
     z-index: 1;
     left: 14%;
@@ -247,18 +225,8 @@ margin: 0;
     color: rgb(255, 0, 0);
     position: absolute;
 }
-.css-mpw198 {
-    opacity: 0;
-    width: 141%;
-    height: 63%;
-    border-radius: 3em;
-    border: 1px solid rgb(224, 149, 237);
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: -27%;
-    transform: translate(-50%, -50%);}
-.tiktok3{
+
+.tiktok3 {
     font-size: 18px;
     z-index: 1;
     left: 10%;
