@@ -1,8 +1,15 @@
 <?php
+$host="localhost";
+$user = "root";
+$password = '';
+$database = "hadi_project";
+$connect = new mysqli($host, $user, $password, $database);
 
-$dbuser = "root";
-$dbpass = '';
-$db = "hadi_project";
-$conn = new mysqli('localhost', $dbuser, $dbpass,$dbname) or die("Connect failed!");
-echo"great work!";
-?>
+    if($connect->error)
+       die("failed to connect with database");
+
+
+    echo "database connected!";
+    $connect->close();
+
+    ?>
