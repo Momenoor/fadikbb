@@ -19,12 +19,6 @@ while ($row = $result->fetch_assoc()) {
     $countLike += $row['like_count'];
 }
 
-
-echo $_SERVER['REQUEST_METHOD'];
-echo "<br>";
-echo "<br>";
-echo "<br>";
-
 ?>
 
 
