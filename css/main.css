@@ -25,11 +25,7 @@
     outline: 3px solid rgb(0, 153, 255);
     border: 2px solid rgb(255, 255, 255);
 }
-.action{
-    z-index: 44;
-    color: black;
-    background-color: black;
-}
+
 .about-me {
     text-align: center;
 }
@@ -142,33 +138,28 @@ div div div {
 form {
     display: flex;
 }
-
-form,
-.fa-close {
+form,.fa-close{
     visibility: hidden;
 }
-
-.fa-close {
+.fa-close{
     z-index: 3;
     position: absolute;
     top: 5px;
     font-size: 15px;
     right: 5px;
 }
-
-.fa-close:hover {
+.fa-close:hover{
     color: red;
 }
-
 .comment .inputmsm {
-    display: block;
-    position: absolute;
+    display: block;    
+    position: absolute;    
     left: 2px;
     border: none;
-    border-radius: 9px;
+    border-radius: 9px;    
     outline: none;
     height: 20px;
-    width: 80%;
+    width: 80%;    
     z-index: 2;
 }
 
@@ -196,7 +187,7 @@ form::before {
     display: block;
     position: absolute;
     width: 100%;
-    height: 100% !important;
+    height: 356.41px;
     z-index: 1;
     top: 0;
     left: 0;
