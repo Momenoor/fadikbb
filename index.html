@@ -15,7 +15,7 @@
     
 </head>
 
-<body onload="get()">
+<body >
     <div class="container">
         <div class="content">
             <div class="image">
@@ -57,13 +57,15 @@
                     <i class="fa-solid fa-comment"></i>
                     <div class="text-comment">0</div>
                 </div>
-                <div class="share">
+                <div class="share" id="shareButton" name="share_clicked">
                     <i class="fa-solid fa-share"></i>
-                    <div class="text-share">0</div>
+                    <div class="text-share" id="shareCount">0</div>
                 </div>
+                
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="script.js"></script>
 </body>
 

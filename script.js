@@ -15,10 +15,7 @@ share.addEventListener('click', event => {
         alert("the current browser does not support the sjare function. please ,manually share the link")
     }
 });
-let textShare = document.querySelector('.text-share');
-share.addEventListener('click', e => {
-    textShare.innerHTML++
-})
+
 //--------------------------------------------------------
 let myComment = document.querySelector(".comment")
 let x = document.querySelector(".fa-close")
@@ -56,5 +53,7 @@ like.addEventListener('click', e => {
         likeIcon.style.color = "red";
         textLike.innerHTML++;
     }
+    
 })
 
+//---------------------------------------------------------------------
