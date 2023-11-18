@@ -1,3 +1,33 @@
+<?php
+
+$connect=mysqli_connect("localhost","root","","interaction");
+if($connect){
+    echo"connect";
+}else{
+die("not connect");
+}
+$sql = "SELECT like_count FROM likes ORDER BY like_count";
+$result = mysqli_query($connect,$sql);
+if(mysqli_num_rows($result)> 0){
+    while($row = mysqli_fetch_assoc($result)){
+        echo " ".$row["like_count"]." ";
+    }};
+$result = $connect->query($sql);
+$row = $result->fetch_assoc();
+
+
+// if(isset($row)){
+//     $update="UPDATE likes SET like_count=like_count+1 WHERE id=1 ";
+//     $resUp=$connect->query($update);
+
+
+//     echo"change";
+    
+// }    
+
+echo $row['like_count'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,15 +74,15 @@
             </div>
 
             <div class="interaction">
-                <div class="like" onclick="save()"  >
+                <div class="like"name="like"  onclick="save()"  >
                     <i class="fa-solid fa-heart"></i>
-                    <div class="text-like" name="like" >0</div>
+                    <div class="text-like" name="txt-like">0</div>
                 </div>
                 <div class="fa-solid fa-close"></div>
                 <div class="comment">
                     <form action="" mathod="post">
                     <input type="text" class="inputmsm">
-                    <input type="submit" class="submit">
+                    <input type="submit" name="sub"class="submit">
                     </form>
                     <i class="fa-solid fa-comment"></i>
                     <div class="text-comment">0</div>

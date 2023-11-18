@@ -47,13 +47,10 @@ let textLike = document.querySelector('.text-like');
 like.addEventListener('click', e => {
     if (likeIcon.style.color == "red") {
         likeIcon.style.color = "black";
-        textLike.innerHTML--;
     }
     else {
         likeIcon.style.color = "red";
-        textLike.innerHTML++;
     }
-    
-})
 
+})
 //---------------------------------------------------------------------
