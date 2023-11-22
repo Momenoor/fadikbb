@@ -1,33 +1,4 @@
-<!-- <?php
 
-$connect=mysqli_connect("localhost","root","","interaction");
-if($connect){
-    echo"connect";
-}else{
-die("not connect");
-}
-$sql = "SELECT like_count FROM likes ORDER BY like_count";
-$result = mysqli_query($connect,$sql);
-if(mysqli_num_rows($result)> 0){
-    while($row = mysqli_fetch_assoc($result)){
-        echo " ".$row["like_count"]." ";
-    }};
-$result = $connect->query($sql);
-$row = $result->fetch_assoc();
-
-
-// if(isset($row)){
-//     $update="UPDATE likes SET like_count=like_count+1 WHERE id=1 ";
-//     $resUp=$connect->query($update);
-
-
-//     echo"change";
-    
-// }    
-
-echo $row['like_count'];
-
-?> -->
 <!DOCTYPE html>
 <html lang="en">
 
