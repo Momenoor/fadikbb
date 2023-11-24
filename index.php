@@ -119,6 +119,6 @@ function updateLikeColor(color) {
     xhr.send();
 }
 
-</script>    
+</script>        
 </body>
 </html>
